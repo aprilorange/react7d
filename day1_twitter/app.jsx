@@ -44,7 +44,10 @@ var TweetBox = React.createClass({
     tweets = [tweet].concat(tweets)
     store.set('tweets', tweets)
     this.setState({
-      tweets: store.get('tweets')
+      tweets: store.get('tweets'),
+      count: 280,
+      content: '',
+      count_state: 'green'
     })
     this.refs.textarea.getDOMNode().value = ''
   },
