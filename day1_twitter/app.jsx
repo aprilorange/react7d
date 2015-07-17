@@ -30,7 +30,7 @@ var TweetBox = React.createClass({
   handleChange: function(e) {
     var count_state = e.target.value.length > 280 ? 'red' : 'green'
     this.setState({
-      count: 140 - e.target.value.length,
+      count: 280 - e.target.value.length,
       count_state: count_state,
       content: e.target.value
     })
